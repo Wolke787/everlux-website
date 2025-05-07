@@ -1,0 +1,257 @@
+/* Allgemeine Stile */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff5733;
+  }
+  
+  /* Hero-Bereich der Startseite */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #ff5733, #ff8c00);
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .cta {
+    background-color: white;
+    color: #ff5733;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cta:hover {
+    background-color: #ff5733;
+    color: white;
+  }
+  
+  /* Formular-Stile (Registrierung & Login) */
+  .registration, .login, .contact, .career {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registration h1, .login h1, .contact h1, .career h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .registration label, .login label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .registration input, .login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .registration button, .login button, .cta {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .registration button:hover, .login button:hover, .cta:hover {
+    background-color: #ff3d00;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+  }
+  /* Kontakt-Seite */
+.contact {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .contact-form div {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button.cta {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form button.cta:hover {
+    background-color: #ff8c00;
+  }
+  .projekte-main {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.projekt {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.projekt img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.projekt-info {
+    padding: 20px;
+}
+
+.projekt-info h2 {
+    margin-top: 0;
+    color: #ff5733;
+}.kontakt {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.kontakt-info h1 {
+  font-size: 36px;
+  color: #ff5733;
+  text-align: center;
+}
+
+.kontakt-info p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.kontakt-formular form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.kontakt-formular label {
+  font-weight: bold;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.kontakt-formular button {
+  padding: 12px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.kontakt-formular button:hover {
+  background-color: #e04a26;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
