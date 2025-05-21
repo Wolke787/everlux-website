@@ -500,3 +500,123 @@ footer {
   color: #fff;
   font-size: 14px;
 }
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #1a1a1a;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff5e00;
+}
+
+.hero-dark {
+  background: url('img/header.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-dark::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero-text {
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 600px;
+  margin: auto;
+}
+
+.projekte {
+  padding: 60px 40px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.projekte h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.projekt-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.projekt-card img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.projekt-card img:hover {
+  transform: scale(1.02);
+}
+
+.projekt-beschreibung {
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  font-size: 14px;
+}
