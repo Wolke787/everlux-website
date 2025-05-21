@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everlux</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                  url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      background-color: #00ccff;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #0099cc;
+    }
+
+    .info-block {
+      text-align: center;
+      max-width: 800px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+    }
+
+    .info-block h2 {
+      font-size: 2rem;
+      color: #1f1f1f;
+      margin-bottom: 1rem;
+    }
+
+    .info-block p {
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .latest-projects {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .latest-projects h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      padding: 1rem 1rem 0.5rem;
+      font-size: 1.3rem;
+      color: #1f1f1f;
+    }
+
+    .project-card p {
+      padding: 0 1rem 1.5rem;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Everlux</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Willkommen bei Everlux</h1>
+      <p>Wir bauen mehr als Häuser. Wir schaffen Zuhause.</p>
+      <a href="registrierung.html" class="cta" id="registerBtn">Jetzt Registrieren</a>
+    </section>
+
+    <section class="info-block">
+      <h2>Test</h2>
+      <p>Test</p>
+    </section>
+
+    <section class="latest-projects">
+      <h2>Unsere aktuellsten Projekte</h2>
+      <div class="projects-grid">
+        <a href="projekt-laufen.html"class="project-card">
+          <img src="c:\Users\Arturo\Pictures\Everlux\Laufen\0036_A-Tech_Laufen_Aus_08_C06.png" alt="Projekt Laufen">
+          <h3>Laufen</h3>
+          <p>Terrassenhaus mit 8 Eigentumswohnungen.</p>
+        </a>
+        <a href="projekt-fürsten.html"class="project-card">
+          <img src="c:\Users\Arturo\Pictures\Everlux\Fürsten\0044_Allschwil_Bachgrabenweg_Aus2_C04B_2.jpg" alt="Projekt Allschwil">
+          <h3>Oberwil 3</h3>
+          <p>MFH mit 21 Mietwohnungen.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Everlux. Passion fürs Bauen.</p>
+  </footer>
+
+  <script>
+    if (localStorage.getItem('userEmail')) {
+      document.getElementById("registerBtn").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

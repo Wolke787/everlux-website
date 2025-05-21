@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karriere - Everlux</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+
+    .career-hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .career-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .career-hero p {
+      font-size: 1.2rem;
+    }
+
+    .career-listings {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .job {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .job:hover {
+      transform: translateY(-5px);
+    }
+
+    .job h3 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    .job p {
+      color: #555;
+    }
+
+    .apply-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #00ccff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .apply-btn:hover {
+      background-color: #0099cc;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Everlux</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="career-hero">
+      <h1>Karriere bei Everlux</h1>
+      <p>Gestalte mit uns die Zukunft des Bauens. Wir suchen engagierte Talente!</p>
+    </section>
+
+    <section class="career-listings">
+      <div class="job">
+        <h3>🏗️ Zeichner (m/w/d)</h3>
+        <p>Du hast ein gutes Räumliches vorstellungsvermögen und hast eine Ausbildung als Zeichner absolviert, dann Bewirb dich noch Heute.</p>
+        <a href="kontakt.html" class="apply-btn">Jetzt bewerben</a>
+      </div>
+
+      <div class="job">
+        <h3>🧱 Projektleiter (m/w/d)</h3>
+        <p>Du hast eine Ausbildung als Projektleiter und willst verantwortung übernehmen, dann bist du bei uns richtig.</p>
+        <a href="kontakt.html" class="apply-btn">Jetzt bewerben</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Everlux. Passion fürs bauen.</p>
+  </footer>
+
+</body>
+</html>
