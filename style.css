@@ -268,3 +268,103 @@ body {
     height: auto;
     margin-bottom: 20px;
 }
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.header {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ff7300;
+}
+
+.hero {
+    background: linear-gradient(90deg, #ff7300, #ff2c2c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero h1 span {
+    color: #fff200;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #fff200;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffd000;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.info-box {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
